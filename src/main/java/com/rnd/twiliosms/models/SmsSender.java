@@ -1,9 +1,29 @@
 package com.rnd.twiliosms.models;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+import com.twilio.type.PhoneNumber;
+
+@Configuration
+@ConfigurationProperties("twilio")
 public class SmsSender {
 
-    public static final String ACCOUNT_SID =
-            "AC98d261a0ad459fd7a2328b870033cd83";
-    public static final String AUTH_TOKEN =
-            "cde3612cac619779939f3998ae92f5a0";
+	private PhoneNumber toPhoneNumbers;	
+	private String body;
+	
+	public PhoneNumber getToPhoneNumbers() {
+		return toPhoneNumbers;
+	}
+	public void setToPhoneNumbers(PhoneNumber toPhoneNumbers) {
+		this.toPhoneNumbers = toPhoneNumbers;
+	}
+	public String getBody() {
+		return body;
+	}
+	public void setBody(String body) {
+		this.body = body;
+	}
+	
+		
 }

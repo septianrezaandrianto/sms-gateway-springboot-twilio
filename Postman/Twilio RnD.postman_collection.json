@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "3813eac9-f040-453b-b684-ea3ed69f8a23",
+		"name": "Twilio RnD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send SMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"toPhoneNumbers\" : \"+6285813310276\",\r\n   \"body\" : \"First sms \" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/api/sendMessage",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
