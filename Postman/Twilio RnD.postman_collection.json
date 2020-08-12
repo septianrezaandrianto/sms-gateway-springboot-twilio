@@ -32,6 +32,26 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Send SMS More",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"toPhoneNumbers\" : \"+6285813310276\",\r\n        \"body\" : \"Ini contoh isi pesan\" \r\n    },\r\n    {\r\n        \"toPhoneNumbers\" : \"+62895391189812\",\r\n        \"body\" : \"Ini contoh isi pesan 2\" \r\n    },\r\n    {\r\n        \"toPhoneNumbers\" : \"+6289609055634\",\r\n        \"body\" : \"Ini contoh isi pesan 3\" \r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
